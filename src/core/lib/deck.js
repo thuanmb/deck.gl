@@ -196,19 +196,6 @@ export default class Deck {
     };
   }
 
-  pickObject({x, y, radius = 0, layerIds = null}) {
-    const selectedInfos = this.layerManager.pickObject({x, y, radius, layerIds, mode: 'query'});
-    return selectedInfos.length ? selectedInfos[0] : null;
-  }
-
-  pickObjects({x, y, width = 1, height = 1, layerIds = null}) {
-    return this.layerManager.pickObjects({x, y, width, height, layerIds});
-  }
-
-  getViewports() {
-    return this.layerManager ? this.layerManager.getViewports() : [];
-  }
-
   // Public API
 
   pickObject({x, y, radius = 0, layerIds = null}) {
