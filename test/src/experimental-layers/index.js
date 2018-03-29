@@ -42,3 +42,4 @@ test('Top-level imports', t => {
 });
 
 import './polygon-tesselation.spec';
+import './gpu-grid-aggregator.spec';
